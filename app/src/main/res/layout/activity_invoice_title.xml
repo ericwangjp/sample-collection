@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/llayout_root">
+
+    <include
+        layout="@layout/title_common"
+        android:id="@+id/title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/title">
+        <ListView
+            android:id="@+id/lv_invoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorFFFFFF"
+            android:divider="@color/colorEEEEEE"
+            android:dividerHeight="2px"
+            android:choiceMode="singleChoice"
+            android:drawSelectorOnTop="true"
+            android:listSelector="#00000000" />
+    </LinearLayout>
+</RelativeLayout>

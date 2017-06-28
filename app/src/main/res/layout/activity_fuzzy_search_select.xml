@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.my.mywebview.activity.fuzzysearch.FuzzySearchSelectActivity">
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_common" />
+<Button
+    android:id="@+id/btn_fuzzy_search"
+    android:layout_width="170dp"
+    android:layout_height="@dimen/dimens80dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/dimens15dp"
+    android:text="模糊搜索\n（支持字母汉字数字）"/>
+<Button
+    android:id="@+id/btn_auto_complete"
+    android:layout_width="170dp"
+    android:layout_height="@dimen/dimens110dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/dimens15dp"
+    android:text="模糊搜索\n（AutoCompleteTextView 控件实现模糊搜索以及自动补全功能）"/>
+</LinearLayout>

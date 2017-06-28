@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llayout_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorFFFFFF"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_cust_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens22dp"
+            android:text="赵四"
+            android:padding="@dimen/dimens10dp"
+            android:textColor="@color/color000000"
+            android:textSize="@dimen/dimens18sp" />
+        <View style="@style/splitLineStyle"
+            android:layout_height="@dimen/dimens1px"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimens10dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/llayout_set_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                    <RadioButton
+                        android:id="@+id/rbtn_select"
+                        android:layout_width="@dimen/dimens30dp"
+                        android:layout_height="@dimen/dimens30dp"
+                        android:layout_gravity="center"
+                        android:button="@null"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_check_box"
+                        android:checked="false"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"/>
+                    <TextView
+                        android:id="@+id/txt_default_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimens22dp"
+                        android:text="默认抬头"
+                        android:textColor="@color/color000000"
+                        android:textSize="@dimen/dimens18sp" />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/img_default"
+                    android:layout_width="@dimen/dimens22dp"
+                    android:layout_height="@dimen/dimens22dp"
+                    android:layout_marginLeft="@dimen/dimens16dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/ic_default"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/txt_invoice_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/color000000"
+                android:textSize="@dimen/dimens18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

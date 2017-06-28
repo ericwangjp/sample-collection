@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.my.mywebview.activity.cutout.CutoutActivity">
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_common" />
+    <TextView
+        android:id="@+id/tv_up_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择待编辑图片"
+        android:textSize="@dimen/dimens20sp"
+        android:layout_below="@+id/title"
+        android:padding="@dimen/dimens10dp"/>
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="#EFDFDF"
+        android:layout_margin="10dp"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:numColumns="4"
+        android:columnWidth="90dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:layout_below="@+id/tv_up_title">
+    </GridView>
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="上传"
+        android:textSize="@dimen/dimens16sp"
+        android:padding="@dimen/dimens10dp"/>
+</RelativeLayout>

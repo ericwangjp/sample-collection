@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 设置整个屏幕背景为白色 -->
+    <item>
+        <color android:color="@color/colorFFFFFF"></color>
+    </item>
+    <!-- 中间logo -->
+    <item>
+        <bitmap
+            android:src="@drawable/bg_header"
+            android:gravity="center"
+            ></bitmap>
+    </item>
+    <!-- 底部图标-->
+    <item>
+        <bitmap
+            android:src="@drawable/banner4"
+            android:gravity="bottom|center_horizontal"></bitmap>
+    </item>
+</layer-list>

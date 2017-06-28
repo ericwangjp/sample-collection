@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:duration="6000"
+    android:repeatMode="restart"
+    android:startOffset="1000">
+<scale
+    android:fromXScale="0.0"
+    android:fromYScale="0.0"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:toXScale="1.5"
+    android:toYScale="1.5"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    android:repeatCount="-1">
+
+</scale>
+    <!--尺寸伸缩动画效果 scale
+    属性：interpolator 指定一个动画的插入器
+    在我试验过程中，使用android.res.anim中的资源时候发现
+    有三种动画插入器:
+    accelerate_decelerate_interpolator  加速-减速 动画插入器
+    accelerate_interpolator        加速-动画插入器
+    decelerate_interpolator        减速- 动画插入器
+    其他的属于特定的动画效果
+    浮点型值：
+
+    fromXScale 属性为动画起始时 X坐标上的伸缩尺寸
+    toXScale   属性为动画结束时 X坐标上的伸缩尺寸
+
+    fromYScale 属性为动画起始时Y坐标上的伸缩尺寸
+    toYScale   属性为动画结束时Y坐标上的伸缩尺寸
+
+    说明:
+    以上四种属性值
+
+    0.0表示收缩到没有
+    1.0表示正常无伸缩
+    值小于1.0表示收缩
+    值大于1.0表示放大
+
+    pivotX     属性为动画相对于物件的X坐标的开始位置
+    pivotY     属性为动画相对于物件的Y坐标的开始位置
+
+    说明:
+    以上两个属性值 从0%-100%中取值
+    50%为物件的X或Y方向坐标上的中点位置
+
+    长整型值：
+    duration  属性为动画持续时间
+    说明:   时间以毫秒为单位
+android:startOffset 在调用start函数之后等待开始运行的时间，单位为毫秒
+
+android:repeatCount 重复的次数，默认为0，必须是int，可以为-1表示不停止
+
+android:repeatMode 重复的模式，默认为restart，即重头开始重新运行，可以为reverse即从结束开始向前重新运行(反向)。
+在android:repeatCount大于0或为infinite时生效
+
+android:detachWallpaper 表示是否在壁纸上运行
+
+android:zAdjustment 表示被animated的内容在运行时在z轴上的位置，默认为normal。
+
+normal保持内容当前的z轴顺序
+
+top运行时在最顶层显示
+
+bottom运行时在最底层显示
+    布尔型值:
+    /******动画结束时，停留在最后一帧**********
+<set Android:fillAfter="true" android:fillBefore="false">
+
+/******动画结束时，停留在第一帧**********
+<set android:fillAfter="false" android:fillBefore="true">
+
+且注：xml设置在</alpha>,</scale>,</translate>,</rotate>标签里面设置是无效的，注意是set标签
+使用实例：
+<?xml version="1.0" encoding="utf-8"?>
+   <set xmlns:Android="http://schemas.android.com/apk/res/android"
+    android:fillEnabled="true"
+    android:fillAfter="true">
+    <translate
+        android:interpolator="@android:anim/cycle_interpolator"
+        android:fromXDelta="0"
+        android:toXDelta="100"
+        android:fromYDelta="0"
+        android:toYDelta="100"
+        android:duration="2000"
+        >
+    </translate>
+
+</set>
+ 未添加此句也可能导致fillAfter无效果android:fillEnabled="true"-->
+</set>

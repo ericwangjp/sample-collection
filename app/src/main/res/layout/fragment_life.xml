@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.my.mywebview.fragment.LifeFragment">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/dimens5dp"
+        android:paddingRight="@dimen/dimens5dp"
+        android:paddingBottom="@dimen/dimens5dp">
+
+    </android.support.v7.widget.RecyclerView>
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="@dimen/dimens18dp"-->
+        <!--android:text="@string/txt_life_fragment" />-->
+
+</FrameLayout>

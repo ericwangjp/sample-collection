@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">超级浏览器</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_video">MyVideoActivity</string>
+    <string name="title_activity_video_select">VideoSelectActivity</string>
+
+    <!-- 通用 -->
+    <string name="common_jump">跳过</string>
+    <string name="common_sure">确定</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_back">返回</string>
+    <string name="common_complete">完成</string>
+    <string name="common_close">关闭</string>
+    <string name="super_browser">超级浏览器</string>
+    <string name="video_play">视频播放</string>
+    <string name="h5_video_play">H5视频播放</string>
+    <string name="toast_click_exit">再按一次我就消失了哦！</string>
+    <string name="toast_please_check_net">请检查网络！</string>
+    <string name="label_not_find">页面走丢了</string>
+    <string name="toast_input_url">请输入播放地址！</string>
+    <string name="txt_login_again">你的账号在其他设备登录，请重新登录！</string>
+    <string name="title_blur">模糊效果</string>
+    <string name="title_function_select">功能选择</string>
+    <string name="title_nav_change">渐变导航栏</string>
+    <string name="label_china_mobile_communication_corp">中国移动</string>
+    <string name="label_china_unicom">中国联通</string>
+    <string name="label_china_telecommunications">中国电信</string>
+    <string name="title_magic_indicator">MagicIndicator效果选择</string>
+    <string name="title_circle_counter">圆形计步器</string>
+    <string name="title_recycleview_style">RecycleView样式选择</string>
+    <string name="title_rcvlistview_style">RcyListView样式</string>
+    <string name="title_rcvgridview_style">RcyGridView样式</string>
+    <string name="title_rcvwaterfall_style">瀑布流</string>
+    <string name="title_rcvstickyheader">粘性头</string>
+    <string name="title_rcvgallery">rcvGallery</string>
+    <string name="title_cutout">图片处理效果</string>
+    <string name="title_pic_editor">图片编辑</string>
+    <string name="title_pic_gesture">手势涂鸦</string>
+    <string name="title_pic_cut">图片裁剪</string>
+    <string name="title_pic_no_cut">获取图片不可裁剪</string>
+    <string name="title_pic_can_cut">获取图片可裁剪</string>
+    <string name="title_fuzzy_search">模糊搜索</string>
+    <string name="title_fuzzy_search_select">模糊搜索功能选择</string>
+    <string name="title_fuzzy_search_tip">模糊搜索自动提示</string>
+    <string name="title_city_search">城市联动选择</string>
+    <string name="title_custome_spinner">下拉框（自定义spinner）</string>
+    <string name="title_custome_spinner_drop">自定义spinner下拉框</string>
+    <string name="title_change_skin">更换皮肤</string>
+    <!-- 设置 -->
+    <string name="title_activity_setting">设置</string>
+    <string name="toast_init_success">初始化成功！</string>
+    <string name="toast_refresh_success">刷新成功！</string>
+    <string name="toast_push_close">推送已关闭！</string>
+    <string name="toast_push_open">推送已开启！</string>
+    <string name="title_push_set">推送设置</string>
+    <string name="title_set_push_time">设置推送时间</string>
+    <string name="title_set_main_page">设置主页</string>
+    <string name="toast_input_new_url">请输入新主页地址</string>
+    <string name="toast_input_correct_url">请输入正确的网址</string>
+    <string name="txt_modify_sure">确定修改？</string>
+    <string name="toast_modify_success">修改成功</string>
+    <string name="title_news">新闻中心</string>
+    <string name="title_sports">体育</string>
+    <string name="title_life">生活</string>
+    <string name="title_convenient">便民服务</string>
+    <string name="title_permission_dispatcher">PermisionDispatcher</string>
+    <string name="title_easy_permission">EasyPermision</string>
+    <string name="title_eventbus_1">EventBusMain</string>
+    <string name="title_eventbus_2">EventBusSecond</string>
+    <string name="title_eventbus_3">EventBusThird</string>
+    <string name="title_all_anims">各种动画</string>
+    <string name="title_all_anims_show">各种动画用法</string>
+    <string name="title_frame_anims_loading">逐帧动画加载圈</string>
+    <string name="title_anims_water_flow">水流动画</string>
+    <string name="title_anims_red_packge">红包开启动画</string>
+    <string name="title_anims_property">属性动画</string>
+    <string name="title_anims_property_xml">属性动画xml</string>
+    <string name="title_layout_anim">布局动画</string>
+    <string name="title_view_animate">ViewAniamte动画</string>
+    <!--发票管家-->
+    <string name="title_invoice_manager">发票管家</string>
+    <string name="pop_title_invoice">发票抬头</string>
+    <string name="pop_title_sweep_invoice">扫码开票</string>
+    <string name="pop_title_invoice_manage">管理</string>
+    <string name="id">ID</string>
+    <string name="name">Name</string>
+    <!-- 极光推送 -->
+    <string name="hello">Hello World, JPush!</string>
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+    <string name="txt_msg_details">消息详情</string>
+    <string name="title_activity_share">ShareActivity</string>
+    <!--动态头部假数据-->
+    <string-array name="data">
+        <item>我是第1行数据</item>
+        <item>我是第2行数据</item>
+        <item>我是第3行数据</item>
+        <item>我是第4行数据</item>
+        <item>我是第5行数据</item>
+        <item>我是第6行数据</item>
+        <item>我是第7行数据</item>
+        <item>我是第8行数据</item>
+        <item>我是第9行数据</item>
+        <item>我是第10数据</item>
+        <item>我是第11行数据</item>
+        <item>我是第12行数据</item>
+        <item>我是第13行数据</item>
+        <item>我是第14行数据</item>
+        <item>我是第15行数据</item>
+    </string-array>
+
+    <string name="life_fragment">生活</string>
+    <string name="txt_life_fragment">我是生活页面</string>
+    <string name="txt_news_fragment">我是新闻页面</string>
+    <string name="txt_spotrs_fragment">我是体育页面</string>
+    <string name="txt_convenience_fragment">我是便民页面</string>
+
+
+</resources>

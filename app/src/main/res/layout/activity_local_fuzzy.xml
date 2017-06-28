@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.my.mywebview.activity.cutout.LocalFuzzyActivity">
+    <RadioGroup
+        android:id="@+id/rg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tab_bottom"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <RadioButton
+                    android:id="@+id/rb_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorFFFFFF"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableTop="@drawable/selector_radio_1"
+                    android:gravity="center"
+                    android:text="home"
+                    android:textColor="@drawable/selector_screen_radio_text"
+                    android:textSize="@dimen/home_bottom_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <RadioButton
+                    android:id="@+id/rb_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorFFFFFF"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawableTop="@drawable/selector_radio_2"
+                    android:gravity="center"
+                    android:text="discover"
+                    android:textColor="@drawable/selector_screen_radio_text"
+                    android:textSize="@dimen/home_bottom_text_size" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:src="@drawable/selector_radio_3" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <RadioButton
+                    android:id="@+id/rb_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorFFFFFF"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawableTop="@drawable/selector_radio_4"
+                    android:gravity="center"
+                    android:text="chat"
+                    android:textColor="@drawable/selector_screen_radio_text"
+                    android:textSize="@dimen/home_bottom_text_size" />
+
+                <TextView
+                    android:id="@+id/unread_msg_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="7"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <RadioButton
+                    android:id="@+id/rb_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorFFFFFF"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawableTop="@drawable/selector_radio_5"
+                    android:gravity="center"
+                    android:text="me"
+                    android:textColor="@drawable/selector_screen_radio_text"
+                    android:textSize="@dimen/home_bottom_text_size" />
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/content"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rg_bottom" >
+    </ImageView>
+
+    <include
+        android:id="@+id/il_add"
+        layout="@layout/layout_add"/>
+</RelativeLayout>

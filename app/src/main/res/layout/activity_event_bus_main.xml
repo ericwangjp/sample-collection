@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.my.mywebview.activity.eventbus.EventBusMainActivity">
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_common" />
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hi ,I'm evevtbus main"
+        android:padding="@dimen/dimens10dp"
+        android:textSize="@dimen/dimens15sp"/>
+    <Button
+        android:id="@+id/btn_jump"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到下一个页面"
+        android:layout_margin="@dimen/dimens10dp"/>
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hi ,result show here"
+        android:padding="@dimen/dimens10dp"
+        android:textSize="@dimen/dimens15sp"/>
+    <Button
+        android:id="@+id/btn_subscribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="订阅事件"
+        android:layout_margin="@dimen/dimens10dp"/>
+    <TextView
+        android:id="@+id/tv_sticky_subscribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hi ,sticky result show here"
+        android:padding="@dimen/dimens10dp"
+        android:textSize="@dimen/dimens15sp"/>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gradient_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.my.mywebview.activity.GradientScrollViewActivity">
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_common" />
+    <Button
+        android:id="@+id/btn_qq"
+        android:layout_width="@dimen/dimens200dp"
+        android:layout_height="@dimen/dimens100dp"
+        android:layout_gravity="center_horizontal"
+        android:text="仿QQ空间动态头部"
+        android:layout_marginTop="@dimen/dimens30dp"/>
+    <Button
+        android:id="@+id/btn_banner"
+        android:layout_width="@dimen/dimens200dp"
+        android:layout_height="@dimen/dimens100dp"
+        android:layout_gravity="center_horizontal"
+        android:text="带banner仿QQ空间动态头部"
+        android:layout_marginTop="@dimen/dimens10dp"/>
+    <Button
+        android:id="@+id/btn_alipay"
+        android:layout_width="@dimen/dimens200dp"
+        android:layout_height="@dimen/dimens100dp"
+        android:layout_gravity="center_horizontal"
+        android:text="仿支付宝动态头部"
+        android:layout_marginTop="@dimen/dimens10dp"/>
+    <Button
+        android:id="@+id/btn_taobao"
+        android:layout_width="@dimen/dimens200dp"
+        android:layout_height="@dimen/dimens100dp"
+        android:layout_gravity="center_horizontal"
+        android:text="仿淘宝详情页"
+        android:layout_marginTop="@dimen/dimens10dp"/>
+
+</LinearLayout>

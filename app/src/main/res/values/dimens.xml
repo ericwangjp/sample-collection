@@ -1,0 +1,151 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- dp dimen -->
+    <dimen name="dimens_1dp">-1dp</dimen>
+    <dimen name="dimens0dp">0dp</dimen>
+    <dimen name="dimens1dp">1dp</dimen>
+    <dimen name="dimens2dp">2dp</dimen>
+    <dimen name="dimens3dp">3dp</dimen>
+    <dimen name="dimens4dp">4dp</dimen>
+    <dimen name="dimens5dp">5dp</dimen>
+    <dimen name="dimens7dp">7dp</dimen>
+    <dimen name="dimens8dp">8dp</dimen>
+    <dimen name="dimens9dp">9dp</dimen>
+    <dimen name="dimens10dp">10dp</dimen>
+    <dimen name="dimens11dp">11dp</dimen>
+    <dimen name="dimens12dp">12dp</dimen>
+    <dimen name="dimens13dp">13dp</dimen>
+    <dimen name="dimens14dp">14dp</dimen>
+    <dimen name="dimens15dp">15dp</dimen>
+    <dimen name="dimens16dp">16dp</dimen>
+    <dimen name="dimens17dp">17dp</dimen>
+    <dimen name="dimens18dp">18dp</dimen>
+    <dimen name="dimens19dp">19dp</dimen>
+    <dimen name="dimens20dp">20dp</dimen>
+    <dimen name="dimens21dp">21dp</dimen>
+    <dimen name="dimens22dp">22dp</dimen>
+    <dimen name="dimens23dp">23dp</dimen>
+    <dimen name="dimens24dp">24dp</dimen>
+    <dimen name="dimens25dp">25dp</dimen>
+    <dimen name="dimens26dp">26dp</dimen>
+    <dimen name="dimens27dp">27dp</dimen>
+    <dimen name="dimens28dp">28dp</dimen>
+    <dimen name="dimens30dp">30dp</dimen>
+    <dimen name="dimens31dp">31dp</dimen>
+    <dimen name="dimens32dp">32dp</dimen>
+    <dimen name="dimens33dp">33dp</dimen>
+    <dimen name="dimens34dp">34dp</dimen>
+    <dimen name="dimens35dp">35dp</dimen>
+    <dimen name="dimens36dp">36dp</dimen>
+    <dimen name="dimens37dp">37dp</dimen>
+    <dimen name="dimens38dp">38dp</dimen>
+    <dimen name="dimens39dp">39dp</dimen>
+    <dimen name="dimens40dp">40dp</dimen>
+    <dimen name="dimens41dp">41dp</dimen>
+    <dimen name="dimens43dp">43dp</dimen>
+    <dimen name="dimens44dp">44dp</dimen>
+    <dimen name="dimens45dp">45dp</dimen>
+    <dimen name="dimens46dp">46dp</dimen>
+    <dimen name="dimens47dp">47dp</dimen>
+    <dimen name="dimens48dp">48dp</dimen>
+    <dimen name="dimens49dp">49dp</dimen>
+    <dimen name="dimens50dp">50dp</dimen>
+    <dimen name="dimens52dp">52dp</dimen>
+    <dimen name="dimens53dp">53dp</dimen>
+    <dimen name="dimens54dp">54dp</dimen>
+    <dimen name="dimens55dp">55dp</dimen>
+    <dimen name="dimens56dp">56dp</dimen>
+    <dimen name="dimens57dp">57dp</dimen>
+    <dimen name="dimens58dp">58dp</dimen>
+    <dimen name="dimens60dp">60dp</dimen>
+    <dimen name="dimens60dp_">-60dp</dimen>
+    <dimen name="dimens61dp">61dp</dimen>
+    <dimen name="dimens64dp">64dp</dimen>
+    <dimen name="dimens65dp">65dp</dimen>
+    <dimen name="dimens66dp">66dp</dimen>
+    <dimen name="dimens67dp">67dp</dimen>
+    <dimen name="dimens70dp">70dp</dimen>
+    <dimen name="dimens72dp">72dp</dimen>
+    <dimen name="dimens74dp">74dp</dimen>
+    <dimen name="dimens75dp">75dp</dimen>
+    <dimen name="dimens78dp">78dp</dimen>
+    <dimen name="dimens80dp">80dp</dimen>
+    <dimen name="dimens81dp">81dp</dimen>
+    <dimen name="dimens82dp">82dp</dimen>
+    <dimen name="dimens83dp">83dp</dimen>
+    <dimen name="dimens85dp">85dp</dimen>
+    <dimen name="dimens89dp">89dp</dimen>
+    <dimen name="dimens90dp">90dp</dimen>
+    <dimen name="dimens100dp">100dp</dimen>
+    <dimen name="dimens105dp">105dp</dimen>
+    <dimen name="dimens110dp">110dp</dimen>
+    <dimen name="dimens120dp">120dp</dimen>
+    <dimen name="dimens125dp">125dp</dimen>
+    <dimen name="dimens140dp">140dp</dimen>
+    <dimen name="dimens150dp">150dp</dimen>
+    <dimen name="dimens167dp">167dp</dimen>
+    <dimen name="dimens170dp">170dp</dimen>
+    <dimen name="dimens180dp">180dp</dimen>
+    <dimen name="dimens200dp">200dp</dimen>
+    <dimen name="dimens220dp">220dp</dimen>
+    <dimen name="dimens230dp">230dp</dimen>
+    <dimen name="dimens236dp">236dp</dimen>
+    <dimen name="dimens240dp">240dp</dimen>
+    <dimen name="dimens250dp">250dp</dimen>
+    <dimen name="dimens280dp">280dp</dimen>
+    <dimen name="dimens295dp">295dp</dimen>
+    <dimen name="dimens300dp">300dp</dimen>
+    <dimen name="dimens306dp">306dp</dimen>
+    <dimen name="dimens350dp">350dp</dimen>
+    <dimen name="dimens380dp">380dp</dimen>
+    <dimen name="dimens400dp">400dp</dimen>
+    <dimen name="title_height">50dp</dimen>
+    <dimen name="head_height">200dp</dimen>
+
+    <!-- dip dimen -->
+    <dimen name="dimens4dip">4dip</dimen>
+
+    <!-- sp dimen -->
+    <dimen name="dimens8sp">8sp</dimen>
+    <dimen name="dimens10sp">10sp</dimen>
+    <dimen name="dimens11sp">11sp</dimen>
+    <dimen name="dimens12sp">12sp</dimen>
+    <dimen name="dimens13sp">13sp</dimen>
+    <dimen name="dimens14sp">14sp</dimen>
+    <dimen name="dimens15sp">15sp</dimen>
+    <dimen name="dimens16sp">16sp</dimen>
+    <dimen name="dimens17sp">17sp</dimen>
+    <dimen name="dimens18sp">18sp</dimen>
+    <dimen name="dimens19sp">19sp</dimen>
+    <dimen name="dimens20sp">20sp</dimen>
+    <dimen name="dimens22sp">22sp</dimen>
+    <dimen name="dimens23sp">23sp</dimen>
+    <dimen name="dimens24sp">24sp</dimen>
+    <dimen name="dimens25sp">25sp</dimen>
+    <dimen name="dimens28sp">28sp</dimen>
+    <dimen name="dimens30sp">30sp</dimen>
+    <dimen name="dimens35sp">35sp</dimen>
+    <dimen name="dimens40sp">40sp</dimen>
+    <dimen name="dimens45sp">45sp</dimen>
+    <dimen name="dimens60sp">60sp</dimen>
+    <dimen name="home_bottom_text_size">20sp</dimen>
+
+    <!-- px dimen -->
+    <dimen name="dimens0.5px">0.5px</dimen>
+    <dimen name="dimens1px">1px</dimen>
+    <dimen name="dimens15px">15px</dimen>
+    <dimen name="dimens20px">20px</dimen>
+
+    <!-- dimen -->
+    <item name="dimens0.7" format="float" type="dimen">0.7</item>
+
+    <!-- 加载圈 -->
+    <dimen name="loading_dialog_width">120dip</dimen>
+    <dimen name="loading_dialog_height">120dip</dimen>
+    <dimen name="loading_dialog_content_size">13sp</dimen>
+    <dimen name="loading_dialog_ds60">28dip</dimen>
+    <dimen name="loading_dialog_ds24">12dip</dimen>
+    <dimen name="loading_dialog_ds14">7dip</dimen>
+</resources>

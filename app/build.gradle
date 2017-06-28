@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.my.mywebview"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "609b0492e11be16741cc442b", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+    }
+    signingConfigs {
+        debug {
+            storeFile file('../JPKeyStore.jks')//签名文件路径
+            storePassword "1QAZ2wsx"
+            keyAlias "Android_jp"
+            keyPassword "1QAZ2wsx"  //签名密码
+            println("====== signingConfigs.debug ======")
+        }
+        release {
+            storeFile file('../JPKeyStore.jks')//签名文件路径
+            storePassword "1QAZ2wsx"
+            keyAlias "Android_jp"
+            keyPassword "1QAZ2wsx"  //签名密码
+            println("====== signingConfigs.release ======")
+        }
+    }
+    buildTypes {
+        debug {
+            println("====== buildTypes.debug ======")
+            signingConfig signingConfigs.debug
+        }
+        release {
+            //是否混淆
+            minifyEnabled true
+            //是否移除无用资源
+            zipAlignEnabled true
+            println("====== buildTypes.release ======")
+            signingConfig signingConfigs.release
+            //混淆的配置文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        huawei {}
+        xiaomi {}
+        qh360 {}
+        baidu {}
+        wandoujia {}
+        yingyongbao {}
+    }
+
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    // 此处以JPush 3.0.3 版本为例。
+    // 此处以JCore 1.1.1 版本为例。
+    compile project(':magicindicator')
+    //    权限适配PermissionsDispatcher
+    //    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.4.0'
+    //    权限管理框架easypermission
+    //    权限适配EasyPermission
+    //    eventBus
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'cn.jiguang.sdk:jpush:3.0.1'
+    compile 'cn.jiguang.sdk:jcore:1.1.0'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.github.hotchemi:permissionsdispatcher:2.4.0'
+    compile 'pub.devrel:easypermissions:0.4.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.5.1'
+    apt 'com.github.hotchemi:permissionsdispatcher-processor:2.4.0'
+}

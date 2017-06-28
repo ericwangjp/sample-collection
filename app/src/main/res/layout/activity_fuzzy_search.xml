@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.my.mywebview.activity.fuzzysearch.FuzzySearchActivity">
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_common" />
+    <EditText
+        android:id="@+id/edt_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens50dp"
+        android:hint="请输入搜索关键字"
+        android:background="@null"
+        android:padding="@dimen/dimens5dp"
+        android:layout_margin="@dimen/dimens5dp"/>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens0dp"
+        android:layout_weight="1"
+        android:dividerHeight="0.5px">
+
+    </ListView>
+</LinearLayout>

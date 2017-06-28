@@ -157,9 +157,15 @@
         <activity
             android:name=".activity.AllAnimsActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity android:name=".activity.anims.AllAnimShowActivity" />
-        <activity android:name=".activity.anims.AnimLoadingActivity" />
-        <activity android:name=".activity.anims.WaterFlowAnimActivity"></activity>
+        <activity
+            android:name=".activity.anims.AllAnimShowActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity
+            android:name=".activity.anims.AnimLoadingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity
+            android:name=".activity.anims.WaterFlowAnimActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"></activity>
         <activity
             android:name=".activity.anims.WifiAnimActivity"
             android:configChanges="orientation|keyboardHidden|screenSize">

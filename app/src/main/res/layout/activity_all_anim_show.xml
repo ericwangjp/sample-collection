@@ -257,7 +257,7 @@
                 android:layout_height="1dp"
                 android:background="#cccccc" />
             <LinearLayout
-                android:id="@+id/llayout_view_animate"
+                android:id="@+id/llayout_view_animate3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"

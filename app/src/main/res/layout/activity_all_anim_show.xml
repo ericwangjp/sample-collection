@@ -257,7 +257,7 @@
                 android:layout_height="1dp"
                 android:background="#cccccc" />
             <LinearLayout
-                android:id="@+id/llayout_view_animate"
+                android:id="@+id/llayout_view_kong"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -268,7 +268,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:text="空白"
+                    android:text="再改一次"
                     android:textSize="15sp" />
 
                 <ImageView

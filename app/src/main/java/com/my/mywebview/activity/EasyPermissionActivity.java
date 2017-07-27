@@ -139,6 +139,7 @@ public class EasyPermissionActivity extends CommonBaseActivity implements EasyPe
                         Uri packageURI = Uri.parse("package:" + getPackageName().toString());
                         Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, packageURI);
                         startActivity(intent);
+                        dialog.dismiss();
                     }
                 })
                 .setNegativeButton("再想想", new DialogInterface.OnClickListener() {

@@ -20,7 +20,7 @@ import cn.jpush.android.api.JPushInterface;
 
 public class SettingActivity extends CommonBaseActivity {
 	private TitleHelper title;
-	private Button btnSwitch;
+	private Button btnSwitch ,btnNightModel;
 	private LinearLayout llayoutInit,llayoutId,llayoutPushSet,llayoutHighSet,llayoutPicture ,llayoutDemo;
 
 	@Override
@@ -28,6 +28,7 @@ public class SettingActivity extends CommonBaseActivity {
 		super.initContentView(savedInstanceState);
 		setContentView(R.layout.activity_setting);
 		btnSwitch=(Button) findViewById(R.id.btn_push_switch);
+		btnNightModel=(Button) findViewById(R.id.btn_night_model);
 		llayoutInit=(LinearLayout) findViewById(R.id.llayout_init_root);
 		llayoutId=(LinearLayout) findViewById(R.id.llayout_id_root);
 		llayoutPushSet=(LinearLayout) findViewById(R.id.llayout_push_set);
@@ -58,6 +59,11 @@ public class SettingActivity extends CommonBaseActivity {
 			btnSwitch.setSelected(true);
 		}else{
 			btnSwitch.setSelected(false);
+		}
+		if((Boolean) PreferencesUtils.get(mContext, "switchModel", true)){
+			btnNightModel.setSelected(true);
+		}else{
+			btnNightModel.setSelected(false);
 		}
 	}
 	@Override
@@ -101,6 +107,21 @@ public class SettingActivity extends CommonBaseActivity {
 					//打开推送
 					JPushInterface.resumePush(getApplicationContext());
 					ToastUtils.show(mContext, R.string.toast_push_open);
+				}
+			}
+		});
+		btnNightModel.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				if(btnSwitch.isSelected()){
+					btnSwitch.setSelected(false);
+					PreferencesUtils.put(mContext, "switchModel",btnSwitch.isSelected());
+					ToastUtils.show(mContext, "夜间模式已关闭");
+				}else{
+					btnSwitch.setSelected(true);
+					PreferencesUtils.put(mContext, "switchModel",btnSwitch.isSelected());
+					ToastUtils.show(mContext, "夜间模式已开启");
 				}
 			}
 		});

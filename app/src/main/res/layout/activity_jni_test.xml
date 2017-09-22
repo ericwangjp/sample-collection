@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.my.mywebview.activity.JniTestActivity">
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_common" />
+    <EditText
+        android:id="@+id/edt_input_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimens16sp"
+        android:padding="@dimen/dimens10dp"/>
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens10dp"
+        android:padding="@dimen/dimens10dp"
+        android:textSize="@dimen/dimens16sp"/>
+    <Button
+        android:id="@+id/btn_start_jni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens10dp"
+        android:padding="@dimen/dimens10dp"
+        android:textSize="@dimen/dimens16sp"
+        android:text="开始测试"/>
+</LinearLayout>

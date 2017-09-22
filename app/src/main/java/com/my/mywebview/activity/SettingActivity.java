@@ -21,7 +21,7 @@ import cn.jpush.android.api.JPushInterface;
 public class SettingActivity extends CommonBaseActivity {
 	private TitleHelper title;
 	private Button btnSwitch;
-	private LinearLayout llayoutInit,llayoutId,llayoutPushSet,llayoutHighSet,llayoutPicture;
+	private LinearLayout llayoutInit,llayoutId,llayoutPushSet,llayoutHighSet,llayoutPicture ,llayoutDemo;
 
 	@Override
 	protected void initContentView(Bundle savedInstanceState) {
@@ -33,6 +33,7 @@ public class SettingActivity extends CommonBaseActivity {
 		llayoutPushSet=(LinearLayout) findViewById(R.id.llayout_push_set);
 		llayoutHighSet=(LinearLayout) findViewById(R.id.llayout_push_high_set);
 		llayoutPicture=(LinearLayout) findViewById(R.id.llayout_picture);
+		llayoutDemo=(LinearLayout) findViewById(R.id.llayout_test_demo);
 	}
 	@Override
 	protected void initTitleBar() {
@@ -121,6 +122,12 @@ public class SettingActivity extends CommonBaseActivity {
 			@Override
 			public void onClick(View v) {
 				JumpUtils.invokeActivity(mContext, FunctionSelectActivity.class);
+			}
+		});
+		llayoutDemo.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				JumpUtils.invokeActivity(mContext, DemoSelectActivity.class);
 			}
 		});
 	}

@@ -47,6 +47,9 @@
     <string name="title_custome_spinner">下拉框（自定义spinner）</string>
     <string name="title_custome_spinner_drop">自定义spinner下拉框</string>
     <string name="title_change_skin">更换皮肤</string>
+    <string name="title_leak_canary">leakCanary测试</string>
+    <string name="title_jni_test">jni测试</string>
+
     <!-- 设置 -->
     <string name="title_activity_setting">设置</string>
     <string name="toast_init_success">初始化成功！</string>
@@ -78,6 +81,7 @@
     <string name="title_anims_property_xml">属性动画xml</string>
     <string name="title_layout_anim">布局动画</string>
     <string name="title_view_animate">ViewAniamte动画</string>
+    <string name="title_demo_test">demo测试集合</string>
     <!--发票管家-->
     <string name="title_invoice_manager">发票管家</string>
     <string name="pop_title_invoice">发票抬头</string>
@@ -85,6 +89,20 @@
     <string name="pop_title_invoice_manage">管理</string>
     <string name="id">ID</string>
     <string name="name">Name</string>
+    <!-- 测试demo -->
+    <string name="title_weinxin_upload_pic">微信图片上传</string>
+    <string name="txt_post_delete_tv_d">拖动到此处删除</string>
+    <string name="txt_choose_pic">选择图片上传</string>
+    <string name="glide_plus_icon_string">android.resource://</string>
+    <string name="post_delete_tv_d">拖动到此处进行删除</string>
+    <string name="post_delete_tv_s">松开手指删除</string>
+    <string name="title_custom_draw">自定义view</string>
+    <string name="title_drawerlayout">drawerlayout</string>
+    <string name="title_drag_view">可拖拽view</string>
+    <string name="title_aidl_message">aidl跨进程通信</string>
+    <string name="title_messenger">messenger跨进程通信</string>
+
+
     <!-- 极光推送 -->
     <string name="hello">Hello World, JPush!</string>
     <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>

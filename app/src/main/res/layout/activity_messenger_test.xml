@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include
+        layout="@layout/title_common" />
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimens10dp"
+        android:textSize="@dimen/dimens20sp"
+        android:textColor="@color/color1CABEB"
+        android:padding="@dimen/dimens10dp"/>
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_marginTop="@dimen/dimens10dp"
+        android:layout_width="@dimen/dimens200dp"
+        android:layout_height="@dimen/dimens80dp"
+        android:text="添加消息"
+        android:padding="@dimen/dimens10dp"
+        android:textSize="@dimen/dimens20sp"
+        android:textColor="@color/colorEB6100"
+        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:id="@+id/llayout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</LinearLayout>

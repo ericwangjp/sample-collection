@@ -85,6 +85,7 @@
     <dimen name="dimens125dp">125dp</dimen>
     <dimen name="dimens140dp">140dp</dimen>
     <dimen name="dimens150dp">150dp</dimen>
+    <dimen name="dimens160dp">160dp</dimen>
     <dimen name="dimens167dp">167dp</dimen>
     <dimen name="dimens170dp">170dp</dimen>
     <dimen name="dimens180dp">180dp</dimen>

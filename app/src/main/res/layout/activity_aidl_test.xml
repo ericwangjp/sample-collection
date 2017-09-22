@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include
+        layout="@layout/title_common" />
+    <Button
+        android:id="@+id/btn_bind"
+        android:layout_marginTop="@dimen/dimens10dp"
+        android:layout_width="@dimen/dimens200dp"
+        android:layout_height="@dimen/dimens80dp"
+        android:text="绑定服务"
+        android:padding="@dimen/dimens10dp"
+        android:textSize="@dimen/dimens20sp"
+        android:textColor="@color/colorEB6100"
+        android:layout_gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/btn_unbind"
+        android:layout_marginTop="@dimen/dimens10dp"
+        android:layout_width="@dimen/dimens200dp"
+        android:layout_height="@dimen/dimens80dp"
+        android:text="解绑服务"
+        android:padding="@dimen/dimens10dp"
+        android:textSize="@dimen/dimens20sp"
+        android:textColor="@color/colorEB6100"
+        android:layout_gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_marginTop="@dimen/dimens10dp"
+        android:layout_width="@dimen/dimens200dp"
+        android:layout_height="@dimen/dimens80dp"
+        android:text="调用加法\n12+12"
+        android:padding="@dimen/dimens10dp"
+        android:textSize="@dimen/dimens20sp"
+        android:textColor="@color/colorEB6100"
+        android:layout_gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/btn_min"
+        android:layout_marginTop="@dimen/dimens10dp"
+        android:layout_width="@dimen/dimens200dp"
+        android:layout_height="@dimen/dimens80dp"
+        android:text="调用减法\n50-30"
+        android:padding="@dimen/dimens10dp"
+        android:textSize="@dimen/dimens20sp"
+        android:textColor="@color/colorEB6100"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

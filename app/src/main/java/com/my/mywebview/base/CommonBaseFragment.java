@@ -10,9 +10,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.my.mywebview.application.ApplicationControl;
 import com.my.mywebview.handler.HandlerImpl;
 import com.my.mywebview.handler.UIHandler;
 import com.my.mywebview.utils.ToastUtils;
+import com.squareup.leakcanary.RefWatcher;
 
 
 /**
@@ -170,6 +172,9 @@ public abstract class CommonBaseFragment extends Fragment {
 		/** 弹出框取消 */
 		ToastUtils.cancel();
 //		MR_ApplicationController.cancelPendingRequests(TAG);
+//		内存泄露监测
+		RefWatcher refWatcher = ApplicationControl.getRefWatcher(getActivity());
+		refWatcher.watch(this);
 	}
 	
 //	@SuppressLint({ "NewApi", "Override" })

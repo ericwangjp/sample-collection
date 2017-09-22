@@ -17,6 +17,7 @@ import android.view.WindowManager;
 import android.widget.AdapterView;
 
 import com.my.mywebview.R;
+import com.my.mywebview.application.ApplicationControl;
 import com.my.mywebview.handler.HandlerImpl;
 import com.my.mywebview.handler.UIHandler;
 import com.my.mywebview.jpush.JPushUtil;
@@ -25,6 +26,7 @@ import com.my.mywebview.utils.NetworkUtils;
 import com.my.mywebview.utils.ToastUtils;
 import com.my.mywebview.utils.log.LogManager;
 import com.my.mywebview.view.dialog.SingleMsgDialog;
+import com.squareup.leakcanary.RefWatcher;
 
 /**
  * activity基类
@@ -285,6 +287,9 @@ public abstract class CommonBaseActivity extends FragmentActivity {
 		//		//停止服务
 		//		Intent stopIntent =new Intent(this,DialogService.class);
 		//		stopService(stopIntent);
+//		内存泄露监测
+		RefWatcher refWatcher = ApplicationControl.getRefWatcher(this);
+		refWatcher.watch(this);
 	}
 
 	@Override

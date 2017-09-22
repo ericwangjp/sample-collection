@@ -108,6 +108,10 @@ public class FunctionSelectActivity extends CommonBaseActivity {
     LinearLayout llayoutSinglechoice;
     @BindView(R.id.llayout_all_anims)
     LinearLayout llayoutAllAnims;
+    @BindView(R.id.llayout_leak_test)
+    LinearLayout llayoutLeakTest;
+    @BindView(R.id.llayout_jni_test)
+    LinearLayout llayoutJniTest;
     private TitleHelper title;
 
     @Override
@@ -249,6 +253,17 @@ public class FunctionSelectActivity extends CommonBaseActivity {
                 JumpUtils.invokeActivity(mContext, AllAnimShowActivity.class);
             }
         });
+        llayoutLeakTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                JumpUtils.invokeActivity(mContext, LeakCanaryActivity.class);
+            }
+        });
+        llayoutJniTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                JumpUtils.invokeActivity(mContext, JniTestActivity.class);
+            }
+        });
     }
-
 }
